@@ -1,0 +1,20 @@
+.headerContent {
+    display: flex;
+    min-height: 51px;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid gray;
+    border-left: transparent;
+    border-top: 1px solid transparent;
+    border-right: transparent;
+    &_text {
+        margin-bottom: 0;
+        padding-left: 10px ;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        color: gray;
+    }
+}
