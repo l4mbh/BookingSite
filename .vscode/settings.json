@@ -1,0 +1,7 @@
+{
+    "emmet.preferences": {},
+    "reactSnippets.settings.prettierEnabled": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
