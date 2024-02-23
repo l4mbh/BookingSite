@@ -21,6 +21,10 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get("/", (req, res, next) => {
+  res.json("Hello")
+})
+
 // Use routes
 app.use('/hotel', hotelRoutes);
 app.use('/user', userRoutes);
