@@ -36,7 +36,7 @@ export const action = async ({ request }) => {
   };
 
   return axios
-    .post("http://localhost:5000/admin/add/hotel", { hotelInfo })
+    .post("https://booking-site-server-psi.vercel.app/admin/add/hotel", { hotelInfo })
     .then((response) => {
       if (response.status === 200) {
         return redirect("/lists/hotel");

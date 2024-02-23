@@ -62,7 +62,7 @@ export const loader = () => {
   const page = searchParams.get("page") || 1;
 
   const result = axios
-    .get("http://localhost:5000/admin/hotelslist?page=" + page)
+    .get("https://booking-site-server-psi.vercel.app/admin/hotelslist?page=" + page)
     .then((response) => response.data)
     .then((data) => {
       return data;

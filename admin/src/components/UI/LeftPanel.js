@@ -22,7 +22,7 @@ const LeftPanel = () => {
 
     if (user) {
       axios
-        .post("http://localhost:5000/admin/logout", { userToken: user.token })
+        .post("https://booking-site-server-psi.vercel.app/admin/logout", { userToken: user.token })
         .then((respsonse) => {
           if (respsonse.statusText === "OK") {
             localStorage.removeItem("user");

@@ -78,7 +78,7 @@ export const loader = () => {
   const page = urlParams.get("page") || 1;
 
   const result = axios
-    .get("http://localhost:5000/admin/userslist?page=" + page)
+    .get("https://booking-site-server-psi.vercel.app/admin/userslist?page=" + page)
     .then((response) => response.data)
     .then((data) => {
       return data;

@@ -17,7 +17,7 @@ const RoomsList = ({ roomsData }) => {
     setModalVisible(false);
     setError(null);
     axios
-      .post("http://localhost:5000/admin/delete/room", {
+      .post("https://booking-site-server-psi.vercel.app/admin/delete/room", {
         roomId: deleteRoomId,
       })
       .then((response) => {

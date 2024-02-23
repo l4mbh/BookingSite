@@ -50,7 +50,7 @@ export const loader = () => {
   const page = query.get("page") || 1;
 
   const result = axios
-    .get("http://localhost:5000/admin/transactionslist?page=" + page)
+    .get("https://booking-site-server-psi.vercel.app/admin/transactionslist?page=" + page)
     .then((response) => response.data)
     .then((data) => {
       return data;

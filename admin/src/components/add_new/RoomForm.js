@@ -18,7 +18,7 @@ const RoomForm = () => {
 
 
   const fetchHotelNames = async () => {
-    const hotelNames = await axios.get('http://localhost:5000/admin/hotelNameList');
+    const hotelNames = await axios.get('https://booking-site-server-psi.vercel.app/admin/hotelNameList');
     if(hotelNames) {
       setHotelList(hotelNames.data);
     }

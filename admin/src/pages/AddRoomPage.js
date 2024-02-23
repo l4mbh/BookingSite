@@ -32,7 +32,7 @@ export const action = async ({ request }) => {
   const hotelId = formData.get("hotelId");
 
   return axios
-    .post("http://localhost:5000/admin/add/room", { roomData, hotelId })
+    .post("https://booking-site-server-psi.vercel.app/admin/add/room", { roomData, hotelId })
     .then((response) => {
       if (response.status === 200) {
         return redirect("/lists/room");

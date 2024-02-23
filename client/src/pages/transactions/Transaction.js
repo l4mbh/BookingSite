@@ -22,7 +22,7 @@ const TransactionPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/user/transaction?u=" + user.username)
+      .get("https://booking-site-server-psi.vercel.app/user/transaction?u=" + user.username)
       .then((result) => {
         const data = result.data;
 

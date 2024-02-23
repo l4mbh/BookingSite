@@ -51,7 +51,7 @@ export default HomePage;
 
 export const loader = () => {
   const result = axios
-    .get("http://localhost:5000/admin/statistic")
+    .get("https://booking-site-server-psi.vercel.app/admin/statistic")
     .then((response) => response.data)
     .then((data) => {
       return {

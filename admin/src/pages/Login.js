@@ -109,7 +109,7 @@ export const action = async ({request}) => {
   const username = formData.get('username');
   const password = formData.get('password');
 
-  return axios.post('http://localhost:5000/admin/login', {
+  return axios.post('https://booking-site-server-psi.vercel.app/admin/login', {
     username: username,
     password: password
   })

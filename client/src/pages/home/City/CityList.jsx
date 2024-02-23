@@ -17,14 +17,14 @@ const CityList = () => {
     const result = [];
 
     axios
-      .get("http://localhost:5000/hotel/city")
+      .get("https://booking-site-server-psi.vercel.app/hotel/city")
       .then((result) => result.data)
       .then((data) => {
         for (const [city, count] of Object.entries(data)) {
           result.push({
             name: `${city}`,
             subText: `${count} properties`,
-            image: `http://localhost:5000/images/${city.replaceAll(' ','_')}.jpg`,
+            image: `https://booking-site-server-psi.vercel.app/images/${city.replaceAll(' ','_')}.jpg`,
           });
         }
         setCities(result);
