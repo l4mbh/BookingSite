@@ -11,7 +11,7 @@ const adminRoutes = require('./routers/admin');
 const app = express();
 
 app.use(cors({
-  origin: true,
+  origin: "*",
   methods: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
   credentials: true
 }));
