@@ -21,15 +21,15 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get("/", (req, res, next) => {
-  res.json("Hello")
-})
 
 // Use routes
 app.use('/hotel', hotelRoutes);
 app.use('/user', userRoutes);
 app.use('/admin', adminRoutes);
 
+app.use("/", (req, res, next) => {
+  res.send("Hello")
+})
 mongoose.connect('mongodb+srv://lambh1998:25076301a@cluster0.kyjcau4.mongodb.net/booking')
   .then(result => {
     app.listen(5000, () => {console.log("Mongoose connected !!! App running on port 5000!")})
