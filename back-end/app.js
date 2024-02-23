@@ -30,7 +30,4 @@ app.use('/admin', adminRoutes);
 app.use("/", (req, res, next) => {
   res.send("Hello")
 })
-mongoose.connect('mongodb+srv://lambh1998:25076301a@cluster0.kyjcau4.mongodb.net/booking')
-  .then(result => {
-    app.listen(5000, () => {console.log("Mongoose connected !!! App running on port 5000!")})
-  })
+mongoose.connect('mongodb+srv://lambh1998:25076301a@cluster0.kyjcau4.mongodb.net/booking');
