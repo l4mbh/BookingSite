@@ -12,7 +12,7 @@ const HotelList = () => {
   const [hotels, setHotels] = useState(null);
 
   useEffect(() => {
-    axios.get('https://booking-site-server-psi.vercel.app/hotel/top-rate')
+    axios.get('https://booking-site-server-two.vercel.app/hotel/top-rate')
     .then(result => result.data)
     .then(data => {
       setHotels(data);
