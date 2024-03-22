@@ -17,7 +17,7 @@ const CityList = () => {
     const result = [];
 
     axios
-      .get("https://booking-site-server-psi.vercel.app/hotel/city")
+      .get("https://booking-site-server-two.vercel.app/hotel/city")
       .then((result) => result.data)
       .then((data) => {
         for (const [city, count] of Object.entries(data)) {
