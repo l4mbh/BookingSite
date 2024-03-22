@@ -108,7 +108,7 @@ export const action = async ({ request }) => {
   const password = requestData.get("userpassword");
 
   return axios
-    .post("https://booking-site-server-psi.vercel.app/user/signup", {
+    .post("https://booking-site-server-two.vercel.app/user/signup", {
       username: username,
       password: password,
     })
