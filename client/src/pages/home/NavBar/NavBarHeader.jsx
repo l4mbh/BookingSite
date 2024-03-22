@@ -69,7 +69,7 @@ const NavBarHeader = () => {
 
   const performLogout = () => {
     axios
-      .post("http://localhost:5000/user/logout", { userToken: user.token })
+      .post("https://booking-site-server-two.vercel.app/user/logout", { userToken: user.token })
       .then((response) => {
         if (response.statusText === "OK") {
           dispatch(userActions.logout());
