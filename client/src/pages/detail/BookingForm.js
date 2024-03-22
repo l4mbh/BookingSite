@@ -37,7 +37,7 @@ const BookingForm = (props) => {
 
   const getHotelOnDateChange = () => {
     axios
-      .post("http://localhost:5000/hotel/search-rooms", {
+      .post("https://booking-site-server-two.vercel.app/hotel/search-rooms", {
         hotelId: props.hotelId,
         dateStart: startDateData,
         dateEnd: endDateData,
