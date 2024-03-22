@@ -110,7 +110,7 @@ const Detail = () => {
         userToken: userInfo.token,
       };
       axios
-        .post("http://localhost:5000/user/new-transaction", transactionInfo)
+        .post("https://booking-site-server-two.vercel.app/user/new-transaction", transactionInfo)
         .then((response) => {
           if (response.statusText === "OK") {
             navigate("/user/transaction");
@@ -136,7 +136,7 @@ const Detail = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/hotel/detail/" + hotelId)
+      .get("https://booking-site-server-two.vercel.app/hotel/detail/" + hotelId)
       .then((response) => response.data)
       .then((data) => {
         setHotelData(data);
