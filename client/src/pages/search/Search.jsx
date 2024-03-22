@@ -55,7 +55,7 @@ export const action = async ({request}) => {
     rooms
   }
 
-  const data = await axios.post('https://booking-site-server-psi.vercel.app/hotel/search', searchData)
+  const data = await axios.post('https://booking-site-server-two.vercel.app/hotel/search', searchData)
   .then(response => response.data)
   .then(data => {
     return data;
