@@ -15,7 +15,7 @@ const Property = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/hotel/type")
+      .get("https://booking-site-server-two.vercel.app/hotel/type")
       .then((result) => result.data)
       .then((data) => {
         const propertyData = [];
