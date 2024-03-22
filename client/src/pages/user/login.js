@@ -90,7 +90,7 @@ export const LoginPage = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("https://booking-site-server-psi.vercel.app/user/login", { username, password })
+      .post("https://booking-site-server-two.vercel.app/user/login", { username, password })
       .then((response) => {
         if (response.statusText === "OK") {
           dispatch(userActions.login(response.data));
